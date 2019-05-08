@@ -1,0 +1,22 @@
+.header{
+    line-height:4rem;letter-spacing:0.5rem;font-size:1rem;color:#fff;
+    margin-left:8%;width:50%;
+}
+#contain{
+     background-color:#98AED7;width:400px;
+}
+.main_input{margin-left:6rem;}
+.input{
+    width:4.5rem;
+}
+.main_input1{
+    margin-top:1.6rem;float:left;
+}
+.clearfix:after{
+    content:"";display:block;clear:both;
+}
+.clearfix{*zoom:1;}
+.main_input2{float:left;margin-left: 2px;}
+#main{margin: 0.8rem auto;}
+#chart{margin:0.8rem auto;}
+.submit{background-color: #3398DB}

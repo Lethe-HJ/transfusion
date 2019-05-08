@@ -1,0 +1,692 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>管理中心</title>-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <!--<link rel="stylesheet" href="../common/layui-v2.3.0/layui/css/layui.css" media="all">-->
+    <!--<script src="../common/jquery/jquery.min.js"></script>-->
+    <!--<script src="../common/layui-v2.3.0/layui/layui.js"></script>-->
+    <!--<link rel="stylesheet" href="../css/index2.css">-->
+    <!--<script src="../js/index2.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="header_first">-->
+    <!--<div class="header">XX医院输液监督平台</div>-->
+    <!--<ul class="layui-nav">-->
+        <!--<li class="layui-nav-item">-->
+            <!--<a href="#">消息<span class="layui-badge" id="new">9</span></a>-->
+            <!--<dl class="layui-nav-child">-->
+                <!--<dd><a href="javascript:;" id="btn0">001号病人，药品错误</a></dd>-->
+                <!--<dd><a href="javascript:;" id="btn1">002号病人，药品错误</a></dd>-->
+                <!--<dd><a href="javascript:;" id="btn2">003号病人，药品错误</a></dd>-->
+            <!--</dl>-->
+        <!--</li>-->
+        <!--<li class="layui-nav-item">-->
+            <!--<a href="select.html" class="people">监控中心<span class="layui-badge-dot"></span></a>-->
+        <!--</li>-->
+        <!--<li class="layui-nav-item">-->
+            <!--<a href=""><img src="../images/nav.JPG" class="layui-nav-img">我</a>-->
+            <!--<dl class="layui-nav-child">-->
+                <!--<dd><a href="javascript:;">修改信息</a></dd>-->
+                <!--<dd><a href="javascript:;">安全管理</a></dd>-->
+                <!--<dd><a href="javascript:;">退了</a></dd>-->
+            <!--</dl>-->
+        <!--</li>-->
+        <!--<li class="nav_l layui-nav-item"  >-->
+            <!--&lt;!&ndash;<div class="layui-input-block" style="float: left; position: relative;">&ndash;&gt;-->
+            <!--<input id="txt" style="width: auto;float: left; position: relative;" type="text" id="select_orderId" name="select_orderId" lay-verify="required" placeholder="请输入病人信息" autocomplete="off" class="layui-input">-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--<button id="btn" class="layui-btn" lay-submit="" id="searchBtn" data-type="getInfo" style="float: left;">搜索</button></li>-->
+    <!--</ul>-->
+<!--</div>-->
+<!--&lt;!&ndash;导航结束&ndash;&gt;-->
+<!--<div class="main" >-->
+    <!--<div class="main_left">-->
+        <!--<div class="main_word">输液警告</div>-->
+
+
+        <!--<div class="main_info clearfix fl">-->
+            <!--<div class="time fl clo">17:28</div>-->
+        <!--<i class="layui-icon img fl" >&#xe671;</i>-->
+            <!--<div class="triangle"></div>-->
+            <!--<div class="box">001</div>-->
+            <!--<div class="box2 fl">输液速度过快</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;第一个结束&ndash;&gt;-->
+        <!--<div class="main_info fl clearfix">-->
+            <!--<div class="time fl clr">17:28</div>-->
+            <!--<i class="layui-icon img fl" >&#xe671;</i>-->
+            <!--<div class="triangle1"></div>-->
+            <!--<div class="box1">001</div>-->
+            <!--<div class="box2 fl">输液速度过快</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;第二个结束&ndash;&gt;-->
+        <!--<div class="main_info clearfix fl">-->
+            <!--<div class="time fl clo ">17:28</div>-->
+            <!--<i class="layui-icon img fl" >&#xe671;</i>-->
+            <!--<div class="triangle"></div>-->
+            <!--<div class="box">001</div>-->
+            <!--<div class="box2 fl">输液速度过快</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;第三个结束&ndash;&gt;-->
+        <!--<div class="main_info fl clearfix">-->
+            <!--<div class="time fl clr">17:28</div>-->
+            <!--<i class="layui-icon img fl" >&#xe671;</i>-->
+            <!--<div class="triangle1"></div>-->
+            <!--<div class="box1">001</div>-->
+            <!--<div class="box2 fl">输液速度过快</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;第四个结束&ndash;&gt;-->
+        <!--<div class="main_info clearfix fl">-->
+            <!--<div class="time fl clo ">17:28</div>-->
+            <!--<i class="layui-icon img fl" >&#xe671;</i>-->
+            <!--<div class="triangle"></div>-->
+            <!--<div class="box">001</div>-->
+            <!--<div class="box2 fl">输液速度过快</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;第五个结束&ndash;&gt;-->
+        <!--<div class="main_info fl clearfix">-->
+            <!--<div class="time fl clr">17:28</div>-->
+            <!--<i class="layui-icon img fl" >&#xe671;</i>-->
+            <!--<div class="triangle1"></div>-->
+            <!--<div class="box1">001</div>-->
+            <!--<div class="box2 fl">输液速度过快</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;<i class="layui-icon prev">&#xe65a;</i>&ndash;&gt;-->
+        <!--&lt;!&ndash;<i class="layui-icon next">&#xe65b;</i>&ndash;&gt;-->
+        <!--&lt;!&ndash;第六个结束&ndash;&gt;-->
+        <!--<div id="demo0"style="text-align: center"></div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;左边结束&ndash;&gt;-->
+    <!--<div class="main_right">-->
+        <!--<table style="margin-left: 5px; display: block" id="tab">-->
+            <!--<tr>-->
+                <!--<td class="td" >-->
+                        <!--<div class="patient fl">001号</div>-->
+                        <!--<i class="layui-icon fl icon" >&#xe770;</i>-->
+                    <!--<p class="fl name">张1</p>-->
+                <!--</td>-->
+                <!--<td class="td1">-->
+                    <!--<div class="patient fl">002号</div>-->
+                    <!--<i class="layui-icon fl icon" id="icon_button">&#xe770;</i>-->
+                    <!--<p class="fl name">张2</p>-->
+                <!--</td>-->
+                <!--<td class="td3" >-->
+                    <!--<div class="patient fl">003号</div>-->
+                    <!--<i class="layui-icon fl icon">&#xe770;</i>-->
+                    <!--<p class="fl name">张3</p>-->
+                <!--</td>-->
+                <!--<td class="td1" >-->
+                    <!--<div class="patient fl">004号</div>-->
+                    <!--<i class="layui-icon fl icon">&#xe770;</i>-->
+                    <!--<p class="fl name">张4</p>-->
+                <!--</td>-->
+                <!--<td class="td3" >-->
+                    <!--<div class="patient fl">005号</div>-->
+                    <!--<i class="layui-icon fl icon">&#xe770;</i>-->
+                    <!--<p class="fl name">张5</p>-->
+                <!--</td>-->
+                 <!--<td class="td3" >-->
+                    <!--<div class="patient fl">005号</div>-->
+                    <!--<i class="layui-icon fl icon">&#xe770;</i>-->
+                    <!--<p class="fl name">张5</p>-->
+                <!--</td>-->
+            <!--</tr>-->
+            <!--&lt;!&ndash;第一行结束&ndash;&gt;-->
+        <!--<tr>-->
+            <!--<td>-->
+            <!--<div class="infusion_box1">-->
+                <!--<div class="box1_box">-->
+                    <!--<div class="box1_box1"></div>-->
+                    <!--<div class="box1_right">-->
+                        <!--剩余400ml 滴速39滴/分-->
+                    <!--</div>-->
+                    <!--<div class="box1_floot">正在输液中。。。。。</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--</td>-->
+            <!--<td>-->
+            <!--<div class="infusion_box2">-->
+                <!--<div class="box1_box">-->
+                    <!--<div class="box1_box2"></div>-->
+                    <!--<div class="box1_right">-->
+                        <!--剩余400ml 滴速39滴/分-->
+                    <!--</div>-->
+                    <!--<i class="layui-icon infusion_icon">&#xe667;</i>-->
+                    <!--<div class="box1_floot2">正在输液中。。。。。</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</td>-->
+            <!--<td>-->
+                <!--<div class="infusion_box3">-->
+                    <!--<div class="box1_box">-->
+                        <!--<div class="box1_box3"></div>-->
+                        <!--<div class="box1_right">-->
+                            <!--剩余400ml 滴速39滴/分-->
+                        <!--</div>-->
+                        <!--<div class="box1_floot3">正在输液中。。。。。</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</td>-->
+            <!--<td>-->
+                <!--<div class="infusion_box2">-->
+                    <!--<div class="box1_box">-->
+                        <!--<div class="box1_box2"></div>-->
+                        <!--<div class="box1_right">-->
+                            <!--剩余400ml 滴速39滴/分-->
+                        <!--</div>-->
+                        <!--<i class="layui-icon infusion_icon">&#xe667;</i>-->
+                        <!--<div class="box1_floot2">正在输液中。。。。。</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</td>-->
+            <!--<td>-->
+                <!--<div class="infusion_box3">-->
+                    <!--<div class="box1_box">-->
+                        <!--<div class="box1_box3"></div>-->
+                        <!--<div class="box1_right">-->
+                            <!--剩余400ml 滴速39滴/分-->
+                        <!--</div>-->
+                        <!--<div class="box1_floot3">正在输液中。。。。。</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</td>-->
+            <!--<td>-->
+                <!--<div class="infusion_box3">-->
+                    <!--<div class="box1_box">-->
+                        <!--<div class="box1_box3"></div>-->
+                        <!--<div class="box1_right">-->
+                            <!--剩余400ml 滴速39滴/分-->
+                        <!--</div>-->
+                        <!--<div class="box1_floot3">正在输液中。。。。。</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</td>-->
+
+        <!--</tr>-->
+            <!--<tr>-->
+                <!--<td class="td" >-->
+                    <!--<div class="patient fl">005号</div>-->
+                    <!--<i class="layui-icon fl icon">&#xe770;</i>-->
+                    <!--<p class="fl name">张三</p>-->
+                <!--</td>-->
+                <!--<td class="td1">-->
+                    <!--<div class="patient fl">006号</div>-->
+                    <!--<i class="layui-icon fl icon">&#xe770;</i>-->
+                    <!--<p class="fl name">张三</p>-->
+                <!--</td>-->
+                <!--<td class="td3" >-->
+                    <!--<div class="patient fl">007号</div>-->
+                    <!--<i class="layui-icon fl icon">&#xe770;</i>-->
+                    <!--<p class="fl name">张三</p>-->
+                <!--</td>-->
+                <!--<td class="td" >-->
+                    <!--<div class="patient fl">008号</div>-->
+                    <!--<i class="layui-icon fl icon">&#xe770;</i>-->
+                    <!--<p class="fl name">张三</p>-->
+                <!--</td>-->
+                <!--<td class="td3" >-->
+                    <!--<div class="patient fl">009号</div>-->
+                    <!--<i class="layui-icon fl icon">&#xe770;</i>-->
+                    <!--<p class="fl name">张三</p>-->
+                <!--</td>-->
+                 <!--<td class="td3" >-->
+                    <!--<div class="patient fl">009号</div>-->
+                    <!--<i class="layui-icon fl icon">&#xe770;</i>-->
+                    <!--<p class="fl name">张三</p>-->
+                <!--</td>-->
+            <!--</tr>-->
+            <!--&lt;!&ndash;第一行结束&ndash;&gt;-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<div class="infusion_box1">-->
+                        <!--<div class="box1_box">-->
+                            <!--<div class="box1_box1"></div>-->
+                            <!--<div class="box1_right">-->
+                                <!--剩余400ml 滴速39滴/分-->
+                            <!--</div>-->
+                            <!--<div class="box1_floot">正在输液中。。。。。</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<div class="infusion_box2">-->
+                        <!--<div class="box1_box">-->
+                            <!--<div class="box1_box2"></div>-->
+                            <!--<div class="box1_right">-->
+                                <!--剩余400ml 滴速39滴/分-->
+                            <!--</div>-->
+                            <!--<i class="layui-icon infusion_icon">&#xe667;</i>-->
+                            <!--<div class="box1_floot2">正在输液中。。。。。</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<div class="infusion_box3">-->
+                        <!--<div class="box1_box">-->
+                            <!--<div class="box1_box3"></div>-->
+                            <!--<div class="box1_right">-->
+                                <!--剩余400ml 滴速39滴/分-->
+                            <!--</div>-->
+                            <!--<div class="box1_floot3">正在输液中。。。。。</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<div class="infusion_box1">-->
+                        <!--<div class="box1_box">-->
+                            <!--<div class="box1_box1"></div>-->
+                            <!--<div class="box1_right">-->
+                                <!--剩余400ml 滴速39滴/分-->
+                            <!--</div>-->
+                            <!--<div class="box1_floot">正在输液中。。。。。</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</td>-->
+                <!--<td>-->
+                    <!--<div class="infusion_box3">-->
+                        <!--<div class="box1_box">-->
+                            <!--<div class="box1_box3"></div>-->
+                            <!--<div class="box1_right">-->
+                                <!--剩余400ml 滴速39滴/分-->
+                            <!--</div>-->
+                            <!--<div class="box1_floot3">正在输液中。。。。。</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</td>-->
+                <!--<td>-->
+                <!--<div class="infusion_box3">-->
+                    <!--<div class="box1_box">-->
+                        <!--<div class="box1_box3"></div>-->
+                        <!--<div class="box1_right">-->
+                            <!--剩余400ml 滴速39滴/分-->
+                        <!--</div>-->
+                        <!--<div class="box1_floot3">正在输液中。。。。。</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</td>-->
+            <!--</tr>-->
+        <!--</table>-->
+        <!--&lt;!&ndash;分页&ndash;&gt;-->
+        <!--<div id="demo7"></div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; 弹出层遮罩 &ndash;&gt;-->
+<!--<div id="layer-mask" class="layer-mask"></div>-->
+<!--&lt;!&ndash; 弹出层窗体 &ndash;&gt;-->
+<!--<div id="layer-pop" class="layer-pop">-->
+    <!--&lt;!&ndash; 弹出层关闭按钮 &ndash;&gt;-->
+    <!--<div id="layer-close" class="layer-close">×</div>-->
+    <!--&lt;!&ndash; 弹出层内容区域 &ndash;&gt;-->
+    <!--<div id="layer-content" class="layer-content">-->
+        <!--<p class="layer_word">流速控制</p>-->
+        <!--<form class="layui-form" action="">-->
+            <!--&lt;!&ndash;<span>启动开关</span>&ndash;&gt;-->
+
+           <!--<div class="layer_radio">-->
+            <!--<input type="radio" name="speed" value="slow" title="慢">-->
+            <!--<input type="radio" name="speed" value="middle" title="中">-->
+            <!--<input type="radio" name="speed" value="quick" title="快" checked>-->
+           <!--</div>-->
+            <!--<div  id="layer_check" >-->
+                <!--<label class="layui-form-label">开关</label>-->
+            <!--<input type="checkbox" name="yyy" lay-skin="switch" lay-text="ON|OFF" >-->
+        <!--</div>-->
+        <!--</form>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<script>-->
+    <!--layui.use(['laypage', 'layer'], function() {-->
+        <!--var laypage = layui.laypage-->
+            <!--, layer = layui.layer;-->
+        <!--laypage.render({-->
+            <!--elem: 'demo7'-->
+            <!--,count: 100-->
+            <!--, theme:'#1395b5'-->
+            <!--,layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']-->
+            <!--,jump: function(obj){-->
+                <!--console.log(obj)-->
+            <!--}-->
+        <!--});-->
+        <!--laypage.render({-->
+            <!--elem: 'demo0'-->
+            <!--,count: 30 //数据总数-->
+            <!--,theme: '#1395b5'-->
+        <!--});-->
+    <!--})-->
+<!--</script>-->
+    <!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../common/layui-v2.3.0/layui/css/layui.css" media="all">
+    <script src="../common/jquery/jquery.min.js"></script>
+    <script src="../common/layui-v2.3.0/layui/layui.js"></script>
+    <link rel="stylesheet" href="../css/index2.css">
+    <script src="../js/index2.js"></script>
+</head>
+<body>
+<div class="header_first">
+    <div class="header">XX医院输液监督平台</div>
+    <ul class="layui-nav">
+        <li class="layui-nav-item">
+            <a href="#">消息<span class="layui-badge" id="new">4</span></a>
+            <dl class="layui-nav-child">
+                <dd><a href="javascript:;" id="btn0">001号病人，药品错误</a></dd>
+                <dd><a href="javascript:;" id="btn1">002号病人，药品错误</a></dd>
+                <dd><a href="javascript:;" id="btn2">003号病人，药品错误</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item">
+            <a href="select.html" class="people">监控中心<span class="layui-badge-dot"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href=""><img src="../images/nav.JPG" class="layui-nav-img">我</a>
+            <dl class="layui-nav-child">
+                <dd><a href="javascript:;">修改信息</a></dd>
+                <dd><a href="javascript:;">安全管理</a></dd>
+                <dd><a href="javascript:;">退了</a></dd>
+            </dl>
+        </li>
+        <li class="nav_l layui-nav-item"  >
+            <!--<div class="layui-input-block" style="float: left; position: relative;">-->
+            <input id="txt" style="width: auto;float: left; position: relative;" type="text" id="select_orderId" name="select_orderId" lay-verify="required" placeholder="请输入病人信息" autocomplete="off" class="layui-input">
+            <!--</div>-->
+            <button id="btn" class="layui-btn" lay-submit="" id="searchBtn" data-type="getInfo" style="float: left;">搜索</button></li>
+    </ul>
+</div>
+<!--导航结束-->
+<div class="main" >
+    <div class="main_left">
+        <div class="main_word">警告消息</div>
+   <div class="main_info fl clearfix">
+            <div class="time fl clo">17:28</div>
+            <i class="layui-icon img fl" >&#xe671;</i>
+            <div class="triangle"></div>
+            <div class="box">0011</div>
+            <div class="box2 fl">药液将滴完</div>
+        </div>
+
+
+        <!--第一个结束-->
+      <div class="main_info clearfix fl">
+            <div class="time fl clo">17:28</div>
+        <i class="layui-icon img fl" >&#xe671;</i>
+            <div class="triangle"></div>
+            <div class="box">0012</div>
+            <div class="box2 fl">药液将滴完</div>
+        </div>
+        <!--第二个结束-->
+      <div class="main_info fl clearfix">
+            <div class="time fl clo">17:28</div>
+            <i class="layui-icon img fl" >&#xe671;</i>
+            <div class="triangle"></div>
+            <div class="box">0013</div>
+            <div class="box2 fl">药液将滴完</div>
+        </div>
+        <!--第三个结束-->
+        <div class="main_info clearfix fl">
+            <div class="time fl clr">17:28</div>
+        <i class="layui-icon img fl" >&#xe671;</i>
+            <div class="triangle1"></div>
+            <div class="box1">0014</div>
+            <div class="box2 fl">药液已滴完</div>
+        </div>
+        <!--第四个结束-->
+          <div class="main_info fl clearfix">
+            <div class="time fl clo">17:28</div>
+            <i class="layui-icon img fl" >&#xe671;</i>
+            <div class="triangle"></div>
+            <div class="box">0022</div>
+            <div class="box2 fl">药液将滴完</div>
+        </div>
+        <!--第五个结束-->
+        <div class="main_info clearfix fl">
+            <div class="time fl clo">17:28</div>
+        <i class="layui-icon img fl" >&#xe671;</i>
+            <div class="triangle"></div>
+            <div class="box">0036</div>
+            <div class="box2 fl">药液将滴完</div>
+        </div>
+        <!--<i class="layui-icon prev">&#xe65a;</i>-->
+        <!--<i class="layui-icon next">&#xe65b;</i>-->
+        <!--第六个结束-->
+        <div id="demo0"style="text-align: center"></div>
+    </div>
+    <!--左边结束-->
+    <div class="main_right">
+        <table style="margin-left: 15px;" id="tab">
+            <tr>
+                <td class="td" >
+                        <div class="patient fl">0011号</div>
+                        <i class="layui-icon fl icon" id="icon_button">&#xe770;</i>
+                    <p class="fl name">胡劲</p>
+                </td>
+                <td class="td1">
+                    <div class="patient fl">0012号</div>
+                    <i class="layui-icon fl icon" >&#xe770;</i>
+                    <p class="fl name">张三</p>
+                </td>
+                <td class="td3" >
+                    <div class="patient fl">0013号</div>
+                    <i class="layui-icon fl icon">&#xe770;</i>
+                    <p class="fl name">张三</p>
+                </td>
+                <td class="td1" >
+                    <div class="patient fl">0014号</div>
+                    <i class="layui-icon fl icon">&#xe770;</i>
+                    <p class="fl name">张三</p>
+                </td>
+                <td class="td3" >
+                    <div class="patient fl">0015号</div>
+                    <i class="layui-icon fl icon">&#xe770;</i>
+                    <p class="fl name">张三</p>
+                </td>
+
+            </tr>
+            <!--第一行结束-->
+        <tr>
+            <td>
+            <div class="infusion_box1">
+                        <div class="box1_box">
+                            <div class="box1_box1"></div>
+                            <div class="box1_right">
+                               剩余 &nbsp;100ml 滴速 &nbsp;0滴/分
+                            </div>
+                            <div class="box1_floot">正在输液中。。。。。</div>
+                        </div>
+                    </div>
+            </td>
+            <td>
+            <div class="infusion_box2">
+                <div class="box1_box">
+                    <div class="box1_box2"></div>
+                    <div class="box1_right">
+                        剩余 &nbsp;10ml 滴速50滴/分
+                    </div>
+                    <i class="layui-icon infusion_icon">&#xe667;</i>
+                    <div class="box1_floot2">正在输液中。。。。。</div>
+                </div>
+            </div>
+        </td>
+            <td>
+                <div class="infusion_box3">
+                    <div class="box1_box">
+                        <div class="box1_box3"></div>
+                        <div class="box1_right">
+                            剩余100ml 滴速60滴/分
+                        </div>
+                        <div class="box1_floot3">正在输液中。。。。。</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="infusion_box2">
+                    <div class="box1_box">
+                        <div class="box1_box2"></div>
+                        <div class="box1_right">
+                            剩余 &nbsp;&nbsp;5ml 滴速70滴/分
+                        </div>
+                        <i class="layui-icon infusion_icon">&#xe667;</i>
+                        <div class="box1_floot2">正在输液中。。。。。</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="infusion_box3">
+                    <div class="box1_box">
+                        <div class="box1_box3"></div>
+                        <div class="box1_right">
+                            剩余200ml 滴速39滴/分
+                        </div>
+                        <div class="box1_floot3">正在输液中。。。。。</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+            <tr>
+                <td class="td" >
+                    <div class="patient fl">0021号</div>
+                    <i class="layui-icon fl icon">&#xe770;</i>
+                    <p class="fl name">张三</p>
+                </td>
+                <td class="td1">
+                    <div class="patient fl">0022号</div>
+                    <i class="layui-icon fl icon">&#xe770;</i>
+                    <p class="fl name">张三</p>
+                </td>
+                <td class="td3" >
+                    <div class="patient fl">0023号</div>
+                    <i class="layui-icon fl icon">&#xe770;</i>
+                    <p class="fl name">张三</p>
+                </td>
+                <td class="td" >
+                    <div class="patient fl">0024号</div>
+                    <i class="layui-icon fl icon">&#xe770;</i>
+                    <p class="fl name">张三</p>
+                </td>
+                <td class="td3" >
+                    <div class="patient fl">0025号</div>
+                    <i class="layui-icon fl icon">&#xe770;</i>
+                    <p class="fl name">张三</p>
+                </td>
+            </tr>
+            <!--第一行结束-->
+            <tr>
+                <td>
+                    <div class="infusion_box1">
+                        <div class="box1_box">
+                            <div class="box1_box1"></div>
+                            <div class="box1_right">
+                                剩余250ml 滴速40滴/分
+                            </div>
+                            <div class="box1_floot">正在输液中。。。。。</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="infusion_box2">
+                        <div class="box1_box">
+                            <div class="box1_box2"></div>
+                            <div class="box1_right">
+                                剩余 &nbsp;&nbsp;0ml 滴速 &nbsp;0滴/分
+                            </div>
+                            <i class="layui-icon infusion_icon">&#xe667;</i>
+                            <div class="box1_floot2">正在输液中。。。。。</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="infusion_box3">
+                        <div class="box1_box">
+                            <div class="box1_box3"></div>
+                            <div class="box1_right">
+                                剩余100ml 滴速50滴/分
+                            </div>
+                            <div class="box1_floot3">正在输液中。。。。。</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="infusion_box1">
+                        <div class="box1_box">
+                            <div class="box1_box1"></div>
+                            <div class="box1_right">
+                                剩余200ml 滴速39滴/分
+                            </div>
+                            <div class="box1_floot">正在输液中。。。。。</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="infusion_box3">
+                        <div class="box1_box">
+                            <div class="box1_box3"></div>
+                            <div class="box1_right">
+                                剩余100ml 滴速60滴/分
+                            </div>
+                            <div class="box1_floot3">正在输液中。。。。。</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!--分页-->
+        <div id="demo7"></div>
+    </div>
+</div>
+<!-- 弹出层遮罩 -->
+<div id="layer-mask" class="layer-mask"></div>
+<!-- 弹出层窗体 -->
+<div id="layer-pop" class="layer-pop">
+    <!-- 弹出层关闭按钮 -->
+    <div id="layer-close" class="layer-close">×</div>
+    <!-- 弹出层内容区域 -->
+    <div id="layer-content" class="layer-content">
+        <p class="layer_word">流速控制</p>
+        <form class="layui-form" action="">
+            <!--<span>启动开关</span>-->
+
+           <div class="layer_radio">
+            <input type="radio" name="speed" value="slow" title="慢">
+            <input type="radio" name="speed" value="middle" title="中">
+            <input type="radio" name="speed" value="quick" title="快" checked>
+           </div>
+            <div  id="layer_check" >
+                <label class="layui-form-label">开关</label>
+            <input type="checkbox" name="yyy" lay-skin="switch" lay-text="ON|OFF" >
+        </div>
+        </form>
+    </div>
+</div>
+<script>
+    layui.use(['laypage', 'layer'], function() {
+        var laypage = layui.laypage
+            , layer = layui.layer;
+        laypage.render({
+            elem: 'demo7'
+            ,count: 100
+            , theme:'#1395b5'
+            ,layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
+            ,jump: function(obj){
+                console.log(obj)
+            }
+        });
+        laypage.render({
+            elem: 'demo0'
+            ,count: 30 //数据总数
+            ,theme: '#1395b5'
+        });
+    });
+
+
+</script>
+    </body>
+</html>

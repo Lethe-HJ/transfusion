@@ -1,0 +1,26 @@
+.header{
+    line-height:60px;letter-spacing:0.8rem;font-size:1.2rem;color:#fff;width: 72%;
+    margin-left:5%;
+}
+.header_first{width:100%;}
+#contain{
+    background-color:#98AED7;
+}
+.main1{
+    margin-top: 30px;
+}
+.input{
+    width:180px;
+}
+.main_input{
+    float:left;margin-left: 120px;
+}
+.main_input1{float:left;margin-right: 90px;}
+.change{margin-top: 30px;}
+#main{float:left;margin-right: 60px;margin-left: 10%;margin-top: 50px;}
+.word{text-align: center;font-size: 16px;font-family: "微软黑体";}
+#chart{float:left;margin-top: 50px;}
+.feedback{margin-top:460px; text-align: center;font-size: 16px;font-family: "微软黑体";}
+/*.layui-textarea{width:800px;height:200px;margin:20px auto;}*/
+.textarea{margin-top: 80px;}
+.submit{background-color: #3398DB}

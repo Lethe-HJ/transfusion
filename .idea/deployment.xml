@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="ssh://root@47.106.83.135:22/root/.virtualenvs/py2env/bin/python" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="ssh://root@47.106.83.135:22/root/.virtualenvs/py2env/bin/python">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/hujin/workspace/tornado_project/transfusion" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>

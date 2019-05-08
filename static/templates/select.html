@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>管理中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../common/layui-v2.3.0/layui/css/layui.css" media="all">
+    <script src="../common/jquery/jquery.min.js"></script>
+    <script src="../common/layui-v2.3.0/layui/layui.js"></script>
+    <link rel="stylesheet" href="../css/select_page/select.css">
+    <script src="../js/select_page/select.js"></script>
+</head>
+<body>
+<div class="header_first">
+<div class="header">XX医院输液监督平台</div>
+<ul class="layui-nav">
+    <li class="layui-nav-item">
+        <a href="#">消息<span class="layui-badge" id="new">9</span></a>
+        <dl class="layui-nav-child">
+            <dd><a href="javascript:;" id="btn0">001号病人，药品错误</a></dd>
+            <dd><a href="javascript:;" id="btn1">002号病人，药品错误</a></dd>
+            <dd><a href="javascript:;" id="btn2">003号病人，药品错误</a></dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item">
+        <a href="index2.html" class="people">流速监控<span class="layui-badge-dot"></span></a>
+    </li>
+    <li class="layui-nav-item">
+        <a href=""><img src="../images/personal.jpg" class="layui-nav-img">我</a>
+        <dl class="layui-nav-child">
+            <dd><a href="javascript:;">修改信息</a></dd>
+            <dd><a href="javascript:;">安全管理</a></dd>
+            <dd><a href="javascript:;">退了</a></dd>
+        </dl>
+    </li>
+    <li class="nav_l layui-nav-item"  >
+        <!--<div class="layui-input-block" style="float: left; position: relative;">-->
+        <input id="txt" style="width: auto;float: left; position: relative;" type="text" id="select_orderId" name="select_orderId" lay-verify="required" placeholder="请输入病床号或姓名" autocomplete="off" class="layui-input">
+    <!--</div>-->
+        <button id="btn" class="layui-btn" lay-submit="" id="searchBtn" data-type="getInfo" style="float: left;">搜索</button></li>
+</ul>
+</div>
+
+
+<!--<table id="demo" lay-filter="test" style="height:80%"></table>-->
+<table id="demo" lay-filter="test" ></table>
+
+<script>
+
+    layui.use('table', function(){
+        var table = layui.table;
+        //第一个实render例
+        table.render({
+            elem: '#demo'
+            ,height:600
+            ,url: 'http://www.pythonhj.top/page_data' //数据接口
+            ,page: true //开启分页
+            ,cols: [[ //表头
+                 {field: 'bednum', title: '病床号', width:"8%", sort: true, fixed: 'left'}
+                ,{field: 'name', title: '姓名', width:"8%"}
+                ,{field: 'gender', title: '性别', width:"7%", sort: true}
+                ,{field: 'age', title: '年龄', width:"5%"}
+                ,{field: 'doctor', title: '主治医师', width:"10%", sort: true}
+                ,{field: 'contact', title: '联系方式', width: "10%"}
+                ,{field: 'IDcard', title: '身份证', width: "20%"}
+                ,{field: 'ill', title: '病症', width: "32%"}
+            ]]
+        });
+    });
+
+</script>
+</body>
+</html>
